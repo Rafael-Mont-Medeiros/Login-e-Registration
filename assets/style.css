@@ -49,6 +49,9 @@
     border-radius: 5px;
     display: flex;
     align-items: center;
+    max-height: 65px;
+    overflow: hidden;
+    transition: max-height .3s;
 }
 
 .input-zone input {
@@ -63,3 +66,47 @@
     padding-left: 15px;
     color: #999;
 }
+
+.lost-password{
+    text-align: left;
+    margin: 15px 0;
+}
+
+.lost-password a{
+    text-decoration: none;
+    color: #3c00a0;
+    font-weight: 600;
+}
+
+.lost-password p{
+    font-weight: 600;
+}
+
+.btn-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-box button{
+    flex-basis: 45%;
+    border: none;
+    outline: none;
+    background: #3c00a0;
+    color: #fff;
+    padding: 15px 12px;
+    border-radius: 45px;
+    cursor: pointer;
+    transition: .5s;
+    margin-top: 15px;
+}
+
+.btn-box button:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    opacity: .9;
+}
+
+.btn-box button.disable{
+    background-color: #999;
+}
+

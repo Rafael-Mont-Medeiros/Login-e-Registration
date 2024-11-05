@@ -10,9 +10,9 @@
 <body>
     <div id="container">
         <div class="input-box">
-            <h1>Sing Up</h1>
+            <h1 id="title">Sing Up</h1>
             <form>
-                <div class="input-zone">
+                <div class="input-zone" id="nameZone">
                     <i class="fa-solid fa-user"></i>
                     <input type="text" placeholder="your name">
                 </div>
@@ -26,8 +26,21 @@
                     <i class="fa-solid fa-lock"></i>
                     <input type="password" placeholder="your password">
                 </div>
+
+                <div class="lost-password">
+                    <p>Lost password? <a href="#">Click Here!</a> </p>
+                </div>
+                
+                <div class="btn-box">
+                    <button type="button" id="singupbtn" onclick="singUp()">Sing Up</button>
+                    <button type="button" id="singinbtn" class="disable" onclick="singIn()">Sing In</button>
+                </div>
             </form>
         </div>
     </div>
 </body>
+
+<script src="/assets/script.js"></script>
 </html>
+                    
+                
